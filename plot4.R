@@ -25,9 +25,9 @@ plot(datafinal[,10],datafinal[,7],main=NULL,xlab="",ylab="Energy sub metering",c
 par(new=TRUE)
 plot(datafinal[,10],datafinal[,8],main=NULL,xlab="",ylab="Energy sub metering",col="red",type="l",lty=1,lwd=1,ylim=c(0,max(datafinal[,7:9])))
 par(new=TRUE)
-plot(datafinal[,10],datafinal[,9],main=NULL,xlab="",ylab="Energy sub metering",col="blue",type="l",lty=1,lwd=1,ylim=c(0,max(datafinal[,7:9])))
+plot(datafinal[,10],datafinal[,9],main=NULL,xlab="",ylab="Energy sub metering",col="blue", type="l",lty=1,lwd=1,ylim=c(0,max(datafinal[,7:9])))
 par(new=FALSE)
-legend('topright',legend=names(datafinal[7:9]),col=c("black","red","blue"),border="white",lty=1,lwd=2)
+legend('topright',legend=names(datafinal[7:9]),col=c("black","red","blue"),box.col="white",lty=1,lwd=2)
 #2r:2c
 plot(datafinal[,10],datafinal[,4],col="black",xlab="datetime",ylab=names(datafinal[4]),main=NULL,type="l",lwd=1,ylim=c(0,max(datafinal[,4])))
 dev.off()
